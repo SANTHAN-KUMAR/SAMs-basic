@@ -1,0 +1,106 @@
+body {
+    background : url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c9a17937-8c0d-4a78-b75b-d9847af5b606/dg7ssyw-c79f2b26-1b69-4633-8cd6-4256bcca93eb.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M5YTE3OTM3LThjMGQtNGE3OC1iNzViLWQ5ODQ3YWY1YjYwNlwvZGc3c3N5dy1jNzlmMmIyNi0xYjY5LTQ2MzMtOGNkNi00MjU2YmNjYTkzZWIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EO5d-A_h03cUY0q0fAsM8qlGBnPxiT2hybyl1VHA1ws);
+    box-sizing: border-box;
+}
+
+h1, ul {
+    color: aliceblue;
+    font-family: "Bungee Spice", sans-serif;
+}
+
+#navbar {
+    margin: 0 auto;
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-items {
+    display: flex;
+    list-style: none;
+    width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-items li {
+    cursor: pointer;
+}
+
+#new-head{
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    font-size: 60px;
+}
+
+  #new-head {
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden; /* Ensures text starts hidden */
+    border-right: 3px solid #333; /* Simulates cursor */
+    width: 0; /* Start with zero width */
+    animation: typing 5s steps(150, end) forwards, blink 0.5s step-end 4s;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent; }
+    100% { border-color: #333; }
+  }
+
+h3 {
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    align-items: center;
+    justify-items: center;
+}
+
+p {
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    align-items: center;
+    justify-items: center;
+}
+#new-p{
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    align-items: center;
+    justify-items: center;
+}
+
+#new-ul {
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+}
