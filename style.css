@@ -115,44 +115,4 @@ p {
     perspective: 1000px; /* Adds 3D depth effect for flipping */
 }
 
-.content-box .inner-box {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d; /* Ensures 3D effect */
-    transition: transform 0.6s ease; /* Smooth flipping transition */
-}
-
-.content-box:hover .inner-box {
-    transform: rotateY(180deg); /* Flips on hover */
-}
-
-.content-box .front,
-.content-box .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Hides the opposite side when flipped */
-    font-family: "Marcellus SC", serif;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.content-box .front {
-    background-color: transparent;
-    color: aliceblue;
-}
-
-.content-box .back {
-    background-color: transparent;
-    color: aliceblue;
-    transform: rotateY(180deg); /* Flipped position for back side */
-    font-size: 18px;
-    padding: 20px;
-}
 
