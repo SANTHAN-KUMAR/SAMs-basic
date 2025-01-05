@@ -1,118 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
-    background : url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c9a17937-8c0d-4a78-b75b-d9847af5b606/dg7ssyw-c79f2b26-1b69-4633-8cd6-4256bcca93eb.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M5YTE3OTM3LThjMGQtNGE3OC1iNzViLWQ5ODQ3YWY1YjYwNlwvZGc3c3N5dy1jNzlmMmIyNi0xYjY5LTQ2MzMtOGNkNi00MjU2YmNjYTkzZWIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EO5d-A_h03cUY0q0fAsM8qlGBnPxiT2hybyl1VHA1ws);
-    box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
 }
 
-h1, ul {
-    color: aliceblue;
-    font-family: "Bungee Spice", sans-serif;
+ul {
+  color: aliceblue;
 }
 
 #navbar {
-    margin: 0 auto;
-    width: 80%;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
 }
 
 #nav-items {
-    display: flex;
-    list-style: none;
-    width: 1200px;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  list-style: none;
+  width: 1200px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #nav-items li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-#new-head{
-    text-align: center;
-    letter-spacing: 10px;
-    font-family: "Marcellus SC", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: aliceblue;
-    font-size: 60px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-  #new-head {
-    font-size: 2rem;
-    white-space: nowrap;
-    overflow: hidden; /* Ensures text starts hidden */
-    border-right: 3px solid #333; /* Simulates cursor */
-    width: 0; /* Start with zero width */
-    animation: typing 5s steps(150, end) forwards, blink 0.5s step-end 4s;
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0;
+  }
+}
 
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-  }
-
-  @keyframes blink {
-    50% { border-color: transparent; }
-    100% { border-color: #333; }
-  }
+#new-head {
+  text-align: center;
+  letter-spacing: 10px;
+  font-weight: 400;
+  font-style: normal;
+  color: aliceblue;
+  font-size: 60px;
+  animation: fadeIn 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 h3 {
-    text-align: center;
-    letter-spacing: 10px;
-    font-size: 40px;
-    font-family: "Marcellus SC", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: aliceblue;
-    align-items: center;
-    justify-items: center;
+  font-size: 50px;
+  letter-spacing: 10px;
+  color: aliceblue;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 150px;
+  opacity: 0;
+  animation: fadeIn 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+h1 {
+  font-size: 160px;
+  letter-spacing: 50px;
+  color: aliceblue;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 100px;
+  opacity: 0;
+  animation: fadeIn 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.text-container {
+  position: relative;
+  height: 70px;
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: aliceblue;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  animation: fadeIn 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  transition: opacity 0.3s ease;
 }
 
 p {
-    text-align: center;
-    letter-spacing: 0.5px;
-    font-size: 20px;
-    font-family: "Marcellus SC", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: aliceblue;
-    align-items: center;
-    justify-items: center;
-}
-#new-p{
-    text-align: center;
-    letter-spacing: 0.5px;
-    font-size: 20px;
-    font-family: "Marcellus SC", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: aliceblue;
-    align-items: center;
-    justify-items: center;
+  font-size: 30px;
+  color: aliceblue;
+  font-weight: 300;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  transition: opacity 0.3s ease;
 }
 
-#new-ul {
-    text-align: center;
-    letter-spacing: 0.5px;
-    font-size: 20px;
-    font-family: "Marcellus SC", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: aliceblue;
-    align-items: center;
-    justify-items: center;
-    list-style: none;
+.text-container:hover h4 {
+  opacity: 0 !important;
 }
 
+.text-container:hover p {
+  opacity: 1;
+}
 
-.content-box {
-    margin-top: 50px;
-    margin-left: 620px;
-    width: 300px;
-    height: 200px;
+.text-container2 {
+
     position: relative;
-    perspective: 1000px; /* Adds 3D depth effect for flipping */
+    height: 70px;
+    margin-top: 120px;
 }
 
-
+.text-container2:hover h4 {
+  opacity: 0 !important;
+}
+.text-container2:hover p {
+  opacity: 1;
+}
